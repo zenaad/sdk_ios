@@ -254,11 +254,11 @@
             NSLog(@"onReward : %ld : %@ : %li", (long)product, reward, (long)count);
         }
         
-        -(void) onClick :(NSInteger)product {
+        - (void) onClick :(NSInteger)product {
             NSLog(@"onClick : %ld", (long)product);
         }
         
-        -(void) onClose :(NSInteger)product :(NSString *)medID {
+        - (void) onClose :(NSInteger)product :(NSString *)medID {
             NSLog(@"onClose : %ld : %@", (long)product, medID);
             //ex : 광고 닫힘과 동시에 다음 광고준비
             [zena2d readyAd :product :medID];
