@@ -18,7 +18,6 @@
     * Show Ad
     * Position the banner
     * Remove banner
-    * ZenaAD Page (VirtualAssets)
     * Code Sample
     * Zena2dDelegate Callback
     * Callback Parameter List
@@ -157,31 +156,6 @@ A Compressed zip file containing a sampleGuide and .framework (iOS SDK) is provi
     ```objective-c
     - (void) Zena2d.removeBanner;
     ```
-<br/>
-
-* ZenaAD Page (VirtualAssets)
-
-    A callable menu must be provided in the in-game options window with a menu that allows for users to view/withdraw accumulated points.   
-    Menu appearance and location are freely displayed in the in-game options window. (Feel free to use the button attached at the bottom of the example)
-    ```objective-c
-    - (void) Zena2d.createPointWindow;
-    ```
-    <br/>
-
-    - Example
-
-        <img src="Image/sample.JPG" width="371px" height="387px" title="Example" alt="sampleImage"></img>
-
-    <br/>
-
-    - Button Download
-    
-       <a href="https://github.com/zenaad/zenaadresources/blob/main/adIcon/wallet_c.png" target="_blank">
-       <img src="https://github.com/zenaad/zenaadresources/blob/main/adIcon/wallet_c.png?raw=true" width="150px" height="150px" title="Button Image" alt="ButtonImgC"></a>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <a href="https://github.com/zenaad/zenaadresources/blob/main/adIcon/wallet_w.png" target="_blank">
-       <img src="https://github.com/zenaad/zenaadresources/blob/main/adIcon/wallet_w.png?raw=true" width="150px" height="150px" title="Button Image" alt="ButtonImgW"></a>
-    
 <br/>
 
 * Code Sample
