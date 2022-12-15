@@ -17,7 +17,9 @@
     * 광고 준비확인
     * 광고 보이기
     * 배너 위치 지정
+    * 배너 크기 지정
     * 배너 제거
+    * 버전 확인
     * 코드 샘플
     * Zena2dDelegate 콜백
     * 콜백 매개변수 목록
@@ -152,9 +154,23 @@
     ```
 <br/>
 
+* 배너 크기 지정
+    ```objective-c
+    - (void) Zena2d.setBannerSize: (NSInteger)size;
+    // Size : ADAPTIVE, FIXED
+    // (배너크기 : 화면 맞춤, 기본크기)
+    ```
+<br/>
+
 * 배너 제거
     ```objective-c
     - (void) Zena2d.removeBanner;
+    ```
+<br/>
+
+* 버전 확인
+    ```objective-c
+    - (NSString *) Zena2d.getVersion;
     ```
 <br/>
 
@@ -193,6 +209,7 @@
             
             NSArray<NSString *> ids = [NSArray arrayWithObjects :"BANNER ID", " INTERSTITIAL ID ", " VIDEO ID", nil]
             zena2d = [Zena2d getInstance];
+            [zena2d setBannerSize :ADAPTIVE];
             [zena2d setBannerGravity :BOTTOM];
             [zena2d init :self :ids];
         }

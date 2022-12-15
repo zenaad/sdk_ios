@@ -17,7 +17,9 @@
     * Confirm ad ready
     * Show Ad
     * Position the banner
+    * Size the banner
     * Remove banner
+    * Check version
     * Code Sample
     * Zena2dDelegate Callback
     * Callback Parameter List
@@ -152,9 +154,23 @@ A Compressed zip file containing a sampleGuide and .framework (iOS SDK) is provi
     ```
 <br/>
 
+* Size the banner
+    ```objective-c
+    - (void) Zena2d.setBannerSize: (NSInteger)size;
+    // Size : ADAPTIVE, FIXED
+    // (Banner Size : fit, default)
+    ```
+<br/>
+
 * Remove banner
     ```objective-c
     - (void) Zena2d.removeBanner;
+    ```
+<br/>
+
+* Check version
+    ```objective-c
+    - (NSString *) Zena2d.getVersion;
     ```
 <br/>
 
@@ -193,6 +209,7 @@ A Compressed zip file containing a sampleGuide and .framework (iOS SDK) is provi
             
             NSArray<NSString *> ids = [NSArray arrayWithObjects :"BANNER ID", " INTERSTITIAL ID ", " VIDEO ID", nil]
             zena2d = [Zena2d getInstance];
+            [zena2d setBannerSize :ADAPTIVE];
             [zena2d setBannerGravity :BOTTOM];
             [zena2d init :self :ids];
         }
