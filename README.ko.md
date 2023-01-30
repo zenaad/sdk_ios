@@ -99,6 +99,9 @@
 
     ![ios_plist2](Image/ios_plist2.JPG "info.plist")
 
+* 전면광고와 동영상광고는 전체 화면을 사용합니다. info.plist 파일에 아래의 키값을 추가해 주세요.   
+View controller-based status bar appearance : YES
+
 <br/><br/>
 
 ## 5. 연동하기

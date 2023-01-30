@@ -99,6 +99,9 @@ A Compressed zip file containing a sampleGuide and .framework (iOS SDK) is provi
 
     ![ios_plist2](Image/ios_plist2.JPG "info.plist")
 
+* Interstitial ads and video ads use the entire screen. Add the following key values to the info.plist file.   
+View controller-based status bar appearance : YES
+
 <br/><br/>
 
 ## 5. link
